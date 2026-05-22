@@ -1,0 +1,47 @@
+---
+// import "@/styles/app.css"
+import Layout from "../../layouts/home/Layout.astro"
+import Intro from "../../layouts/interventions_layouts/Intro.astro"
+import Content from "../../layouts/interventions_layouts/Content.astro"
+---
+<Layout title="Естетска стоматологија">
+  <Intro imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1725400919/close-up-smiley-patient-appointment_emzrqb.jpg">
+    <div class="lg:w-full lg:h-full items-center lg:flex ">
+      <div class="lg:ml-10 lg:mt-10">
+        <h2  class="lg:text-9xl text-5xl text-red-500 font-bold">Cosmetic dentistry</h2>
+        <p class="text-2xl hidden lg:flex mt-5"> 
+          Tooth damage caused by cavities or trauma can be successfully addressed in the field of cosmetic dentistry.
+        </p>
+      </div>
+    </div>
+  </Intro>
+  <div class="w-full bg-red-500 py-[96px] min-h-screen ">
+    <Content imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817183/molar-tooth-fissure-restoration-filling-600nw-2114097164_f3slpj.webp">
+      <div>
+        <h3 class="text-6xl mb-20 font-bold">Composite (white) fillings</h3>
+        <p class="text-2xl">Composite is a modern material that has fully gained popularity over dark amalgam due to its complete ability to mimic lost tooth substance, better mechanical properties, reduced need for tooth preparation, and similar advantages.</p>
+      </div>
+    </Content>
+
+    <Content imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817322/Untitled_lainsf.png">
+      <div>
+        <h3 class="text-6xl mb-20 font-bold">Laminates (veneers) and metal-free ceramic crowns</h3>
+        <p class="text-2xl">If you are not satisfied with the color, shape, or position of your front teeth and want to smile with a wide smile full of confidence, you can achieve this precisely with these constructions.</p>
+      </div>
+    </Content>
+
+    <Content imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817366/istockphoto-1361598488-612x612_cjw7pe.jpg">
+      <div>
+        <h3 class="text-6xl mb-20 font-bold">Teeth whitening</h3>
+        <p class="text-2xl">Has years of drinking coffee, tea, and red wine, as well as smoking cigarettes, left marks on your teeth? We can help you restore the brightness of your smile using the latest products and methods.</p>
+      </div>
+    </Content>
+
+    <Content imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1733683475/jewelery-1_syt9pe.jpg">
+      <div>
+        <h3 class="text-6xl mb-20 font-bold">Tooth jewelry</h3>
+        <p class="text-2xl">Your smile is just as it should be, but do you want it to shine with brilliance? You can achieve just that in a simple way by incorporating zircon or tooth jewelry. The procedure itself is painless and does not harm the tooth to which it is applied.</p>
+      </div>
+    </Content>
+  </div>
+</Layout>

@@ -1,0 +1,163 @@
+---
+// import "@/styles/app.css"
+import Layout from "../layouts/home/Layout.astro"
+import Contact from "../layouts/home/Contact.astro"
+import Home from "../layouts/home/Home.astro"
+import AboutUs from "../layouts/home/AboutUs.astro"
+import Philosophy from "../layouts/home/Philosophy.astro"
+import Reviews from "../layouts/home/Reviews.astro"
+
+const reviews: {
+  name:string,
+  content:string
+}[] = [
+    {
+    name: "Milka Pancurova Ganceva ",
+    content: "Најдобри во својата работа.Професионални и одговорни кон своите пациенти. Од се❤️ ги препорачувам."
+  },
+    {
+    name: "Nada Babulova",
+    content: "I jas stanav del od prekrasnata atmosfera koja ja ima vo vashata ordinaria.Golemo bravo za vashata strucnost i profesionalnost"
+  },
+    {
+    name: "Anica Doncheva",
+    content: "Golema blagodarnost za vasata profesionalnost.Kako pacient prezadovolna .Od se ❤️gi preporacuvam ."
+  },
+    {
+    name: "Sasha Kostov",
+    content: "Najdobri vo svoeto rabotenje edinstveni vo Strumica  Dr.Roksana Petkovska-Bozhinova i personalot za vrvna usluga i kvalitet..."
+  },
+
+  ]
+
+---
+<Layout title="Д-р Роксана Петковска-Божинова">
+  <Home>
+        <h1 class=" text-red-500 font-bold 2xl:text-8xl text-7xl">Сега и Вашата насмевка може да биде вака убава!</h1>  
+        <p class="text-2xl hidden lg:block mt-5">Овозможете си го новиот тренд во стоматологијата... уживање наспроти досегашното плашење од стоматолошка интервенција</p>
+  </Home>
+  <Philosophy>
+Влегувате возбудени и збунети во непознат простор...
+Еден пријатен глас и релаксирачка музика 
+Ве дочекуваат уште од вратата.
+Ве водат кон удобен стол во кој ќе Ве сместат...
+Фокусирано светло Ве осветлува...и по малку имате чувство дека Ве хипнотизира, 
+Звуците во позадина....лесно... се губат,
+И така полека заборавате кој сте, каде сте и зошто сте тука.
+Размислувате само на тоа колку удобно се чувствувате, и дека сакате удобно да се чувствувате...и ....и...дознавате дека интервенцијата е века завршена...
+  </Philosophy>
+  <AboutUs id="aboutUs" >
+    <div id="aboutUs" class="w-full flex ">
+      <div class="ml-10 mt-10">
+        <h2  class="lg:text-9xl text-7xl sm:text-8xl mb-10 lg:mb-0 text-red-500 font-bold">За нас</h2>
+        <p class="text-2xl mt-5"> 
+          ПЗУ „ООС Д-р Роксана Петковска-Божинова“ е основана во 2005 година од Д-р Роксана Петковска-Божинова <br>
+          Истата година има склучено и договор со фондот за здравствено осигурување
+        </p>
+
+        <p class="text-2xl mt-10"> 
+          Како Ваша Општа Стоматолошка Ординација, предодредедни сме да користиме најнови методи и материјали кои се основа на модерната стоматологија, со цел постигнување на видливи резултати. <br>
+          Кога Ви нудиме третман ние ги земаме во обзир Вашите желби, Ви објаснуваме кои можности ви стојат на располагање, нивната цена, така да можете да направите избор.
+        </p>
+      </div>
+    </div>
+  </AboutUs>
+  <div class="w-full lg:py-[96px] py-20 flex justify-center bg-red-500">
+     <h2 class="lg:text-9xl text-7xl sm:text-8xl ml-5 lg:ml-0 text-white font-bold">Нашиот тим</h2>
+  </div>
+<div class="w-full px-10 lg:py-[96px] py-20 min-h-screen bg-red-500 text-white">
+    
+    <div class="pb-[96px]  lg:flex w-full">
+
+      <div class="w-full mr-10 flex ">
+        <img class="lg:h-[calc(100vh_-_96px)] mb-5 lg:mb-0 object-cover rounded-xl" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1726737838/roksana_pienb1.png"/>
+      </div> 
+
+      <div class="w-full ">
+        <div class="text-white h-full flex items-center lg:mr-10 xl:mr-10 text-2xl">
+          <div>
+            <h3 class="text-6xl font-bold">Д-р Роксана Петковска-Божинова</h3>
+              <p class=" mt-10">Д-р Роксана Петковска-Божинова има завршено Стоматолошки факултет при Универзитетот „Св. Кирил и Методиј“ во Скопје во 2001 година, и од тогаш активно работи во повеќе реномирани Стоматолошки ординации во Струмица. <br>
+Во 2005та година ја има основано нејзината сопствена стоматолошка ординација ПЗУ „ООС Д-р Роксана Петковска-Божинова“. <br>
+Во текот на 24-годишното работно искуство паралелно со работата Д-р Роксана се има усовршувано на бројни домашни и меѓународни обуки за естетска и конзервативна стоматологија, пратејќи ги најсовремените трендови на модерната стоматолошка пракса. <br> Со внимателен и стрплив пристап према пациентите, им овозможува сигурност и примена на интервенции од област на конзервативна стоматологија, стоматолошка протетика, ендодонција, детска и превентивна стоматологија.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pb-[96px] lg:flex w-full">
+
+      <div class="w-full lg:hidden justify-end flex ">
+        <img class="lg:h-[calc(100vh_-_96px)] mb-5 lg:mb-0 object-cover rounded-xl" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1777474087/IMG-ffabe350cdb358766c7fdda5970b9ee2-V_rfoeni.jpg"/>
+      </div> 
+      <div class="w-full ">
+        <div class="text-white lg:text-right h-full flex items-center lg:mr-10 text-2xl">
+         <div>
+            <h3 class="text-6xl font-bold">Д-р Ана Петровска</h3>
+              <p class=" mt-10">Д-р Ана Петровска има дипломирано на Стоматолошки факултет при  Универзитетот „Гоце Делчев“ во Штип во 2018 година, и притоа е прогласена за студент на генерација 2012/2013. <br> Во текот на студирањето пратена е на усовршување во Samara State Medical University во Русија. <br> Во ПЗУ „ООС Д-р Роксана Петковска-Божинова“ е вработена во 2022 година, каде работи во сите области од општа стоматологија. <br> Д-р Ана Петровска редовно учествува на контиунирано стручно усовршување, а посебен интерес и е Ендодонцијата со користење на најсовремени техники за машинска Ендодонција кои ги применува во секојдневната пракса.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full hidden justify-end lg:flex ">
+        <img class="h-[calc(100vh_-_96px)]  rounded-xl" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1777474087/IMG-ffabe350cdb358766c7fdda5970b9ee2-V_rfoeni.jpg"/>
+      </div> 
+
+    </div>
+    <div class=" lg:flex w-full">
+
+      <div class="w-full lg:mr-10 xl:mr-10 flex lg:ml-10">
+        <img class="lg:h-[calc(100vh_-_96px)]  mb-5 lg:mb-0 rounded-xl" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1726737965/save_xdnrts.png"/>
+      </div> 
+
+      <div class="w-full ">
+        <div class="text-white h-full flex items-center mr-10 text-2xl">
+          <div>
+            <h3 class="text-6xl font-bold">Саветка Танева</h3>
+              <p class=" mt-10">Саветка Танева е стоматолошка сестра која во ПЗУ „ООС Д-р Роксана Петковска-Божинова“ е вработена во 2012 година и е задолжена за целокупната организација на работата во истата. Таа го има првиот пристап со пациентите во ординацијата и со својата внимателност и љубезен однос уште од самиот старт го намалува нивниот страв. Секогаш е упорна и истрајна во нејзината ангажираност на секое поле во ординацијата.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+<Reviews reviews={reviews} id="reviews">
+      <h2 class="lg:text-9xl mt-10 lg:ml-10 ml-5 text-7xl sm:text-8xl text-red-500 font-bold mb-10">Рецензии</h2>
+  </Reviews>
+  <Contact id="contact">
+      <h2 class="lg:text-9xl mt-10 ml-10 text-7xl sm:text-8xl text-red-500 font-bold mb-10">Контакт</h2>
+
+    <div class="ml-10 ">
+      <div class="text-2xl flex lg:mb-5 mb-10 items-center">
+<svg class="w-10 h-10 mr-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"/>
+</svg>
+ Ул. „Маршал Тито“ бр.113 </div>
+      <div class="text-2xl flex items-center lg:mb-5 mb-10">
+<svg class="w-10 h-10 mr-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
+</svg>
+        <div class="lg:flex"><a class="lg:mr-2 lg:mb-0" href="tel:+38970331923"> +38970 310 923</a> <p>/ 034 346 665</p>  </div></div>
+      <div class="text-2xl flex items-center mb-10">
+<svg class="w-10 h-10 mr-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
+        </svg>
+        <a href="mailto:roksanapb@yahoo.com">roksanapb@yahoo.com</a></div>
+    <div class="flex">
+      <a href="https://www.facebook.com/drroksana?locale=mk_MK"> 
+<svg class="w-16 h-16 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
+</svg>
+</a>
+      <a href="https://www.instagram.com/pzudr_roksana/" class="ml-5"> 
+<svg class="w-16 h-16 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+</svg>
+</a>
+    </div>
+    </div>
+  </Contact>
+</Layout>
+
+
+
+

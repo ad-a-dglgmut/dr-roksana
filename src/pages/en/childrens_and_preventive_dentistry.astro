@@ -1,0 +1,36 @@
+---
+// import "@/styles/app.css"
+import Layout from "../../layouts/home/Layout.astro"
+import Intro from "../../layouts/interventions_layouts/Intro.astro"
+import Content from "../../layouts/interventions_layouts/Content.astro"
+---
+<Layout title="Pediatric and Preventive Dentistry">
+  <Intro imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817714/dets_vof70g.png">
+    <div class="lg:w-full lg:h-full items-center lg:flex ">
+      <div class="lg:ml-10 lg:mt-10">
+        <h2 class="lg:text-9xl text-5xl text-red-500 font-bold">Pediatric and Preventive Dentistry</h2>
+      </div>
+    </div>
+  </Intro>
+  <div class="w-full bg-red-500 py-[96px] min-h-screen ">
+    <Content imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817712/depositphotos_118111558-stock-photo-dentist-examining-girls-teeth_m3emrl.webp">
+      <div>
+        <p class="text-2xl"> We are especially proud that our team is being called THE FRIENDS OF CHILDREN. 
+We achieved this by paying special attention to our relationship with children, especially their first contact with the dentist. 
+This means that our main goal is for our youngest patients to come and leave happy.</p>
+      </div>
+    </Content>
+
+    <Content imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817712/childrens-dentistry-closeup-portrait-girl-600nw-2331223587_wgbsfg.webp">
+      <div>
+        <ul class="text-2xl">
+          <li>Treatment and filling of milk and young permanent teeth -</li> 
+          <li>Planning and monitoring of fluoride prevention against cavities -</li> 
+          <li>Sealing of fissures -</li> 
+          <li>In cooperation with orthodontic specialists, we perform -<br><span class="mr-5"> orthodontic therapy for crooked teeth</span></li> 
+        </ul>
+      </div>
+    </Content>
+
+  </div>
+</Layout>

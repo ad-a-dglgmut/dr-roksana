@@ -1,0 +1,36 @@
+<div  class="w-full hidden px-10 py-[96px] min-h-screen bg-red-500 xl:flex ">
+  <div class="w-1/2">
+    <div class="w-1/2 rounded-xl h-1/2 grid grid-cols-2">
+      <div class="row-span-2">
+        <img class="rounded-l-xl object-cover w-full h-full" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1777474088/IMG-cf80b4fc2bf2f71d1011ebc34d0d69ba-V_s4m2dc.jpg"/> 
+      </div>
+      <div>
+        <img class=" rounded-tr-xl object-fill w-full h-full" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1777474088/IMG-00f5b0cc83ae37e91064e5ec6f38054b-V_bz9vkc.jpg"/>
+      </div>
+      <div>
+        <img class="object-fill rounded-br-xl w-full h-full" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1777474088/IMG-cadd57a53c4dc52791bdfa2965b0e8ec-V_hg5ewz.jpg"/>
+      </div>
+    </div>
+  </div> 
+  <div class="w-1/2">
+    <div class="text-white h-full flex items-center text-right lg:block ml-10 text-4xl"><slot/> </div>
+  </div>
+</div>
+
+<div class="w-full xl:hidden px-3 py-[96px] min-h-screen bg-red-500  ">
+
+    <div class="w-full rounded-xl h-full grid grid-cols-2">
+      <div class="row-span-2">
+        <img class="rounded-l-xl object-cover w-full h-full" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1777474088/IMG-cf80b4fc2bf2f71d1011ebc34d0d69ba-V_s4m2dc.jpg"/> 
+      </div>
+      <div>
+        <img class=" rounded-tr-xl object-fill w-full h-full" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1777474088/IMG-00f5b0cc83ae37e91064e5ec6f38054b-V_bz9vkc.jpg"/>
+      </div>
+      <div>
+        <img class="object-fill rounded-br-xl w-full h-full" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1777474088/IMG-cadd57a53c4dc52791bdfa2965b0e8ec-V_hg5ewz.jpg"/>
+      </div>
+    </div>
+    <div class="text-white mt-8 h-full flex items-center lg:text-right lg:block ml-10 text-4xl">
+      <slot/>
+    </div>
+</div>

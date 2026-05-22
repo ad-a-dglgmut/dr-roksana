@@ -1,0 +1,23 @@
+---
+import ReviewCarousel from "../../components/ReviewCarousel.svelte";
+
+type CarouselItems = {
+  name:string
+  content:string
+}
+interface Props {
+  reviews: CarouselItems[] 
+  id:string
+}
+
+const { id, reviews } = Astro.props
+---
+
+<div id={id} class="w-full mt-20 h-[calc(100vh_-_120px)] ">
+  <div class="w-full">
+    <slot/>
+  </div> 
+  <div class="w-full lg:px-0 md:px-10">
+    <ReviewCarousel reviews={reviews}  client:only/>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+---
+// import "@/styles/app.css"
+import Layout from "../../layouts/home/Layout.astro"
+import Intro from "../../layouts/interventions_layouts/Intro.astro"
+import Content from "../../layouts/interventions_layouts/Content.astro"
+---
+<Layout title="Детска и превентивна стоматологија">
+  <Intro imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817714/dets_vof70g.png">
+    <div class="lg:w-full lg:h-full items-center lg:flex ">
+      <div class="lg:ml-10 lg:mt-10">
+        <h2  class="lg:text-9xl text-5xl text-red-500 font-bold">Детска и превентивна стоматологија</h2>
+      </div>
+    </div>
+  </Intro>
+  <div class="w-full bg-red-500 py-[96px] min-h-screen ">
+    <Content imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817712/depositphotos_118111558-stock-photo-dentist-examining-girls-teeth_m3emrl.webp">
+      <div>
+        <p class="text-2xl"> Посебно сме горди што нашиот тим го нарекуваат ПРИЈАТЕЛИ НА ДЕЦАТА .
+Тоа го постигнувме бидејки посветуваме посебно внимание на нашиот однос со децата, а посебно на нивниот прв контакт со стоматолог.
+Тоа значи дека наша главна цел е нашите најмлади пациенти да доагаат и си одат срекни од кај нас.</p>
+      </div>
+    </Content>
+
+    <Content imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817712/childrens-dentistry-closeup-portrait-girl-600nw-2331223587_wgbsfg.webp">
+      <div>
+        <ul class="text-2xl">
+          <li>Лекување и пломбирање на млечни и млади трајни заби -</li> 
+          <li>Планирање и контрола на флуорна превентива ан кариес -</li> 
+          <li>Залевање на фисури -</li> 
+          <li>Во соработка со специјалисти по ортодонција вршиме -<br><span class="mr-5"> ортодонтска терапија на криви заби</span></li> 
+        </ul>
+      </div>
+    </Content>
+
+  </div>
+</Layout>

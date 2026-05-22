@@ -1,0 +1,36 @@
+---
+// import "@/styles/app.css"
+import Layout from "../../layouts/home/Layout.astro"
+import Intro from "../../layouts/interventions_layouts/Intro.astro"
+import Content from "../../layouts/interventions_layouts/Content.astro"
+---
+<Layout title="Стоматолошка протетика">
+  <Intro imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817456/protetk_dzvbx1.png">
+    <div class="lg:w-full lg:h-full items-center lg:flex ">
+      <div class="lg:ml-10 lg:mt-10">
+        <h2  class="lg:text-9xl text-5xl text-red-500 font-bold">Стоматолошка протетика</h2>
+        <p class="text-2xl hidden lg:flex mt-5"> 
+           Зошто треба да се надоместат заби кои се изгубени? Бидејки настанува пореметување на една комплетна рамнотежа во забалото која со текот на времето станува поизразена и резултира со потреба од подолготрајна, посложена и поскапа терапија. Како најдобро решение Ви се нуди имплант, но ако од некои причини не можете или не сакате , на располагање се некои од следниве протетски решенија..
+        </p>
+      </div>
+    </div>
+  </Intro>
+  <div class="w-full bg-red-500 py-[96px] min-h-screen ">
+    <Content imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817687/fiks_b4xlmv.png">
+      <div>
+        <h3 class="text-6xl mb-20 font-bold">Фиксна протетика</h3>
+        <p class="text-2xl">Како Што кажува и самото име, тоа е дел од протетиката во кој се изработуваат конструкции( коронки и мостови) кои откако стоматологот ги намести повеќе не се вадат(освен со посебни методи) и нив пациентот ги Чувствува како сопствени заби.
+Естетика, долговечност како и брзо прилагодување е само некои од предностите на фиксните пред мобилните конструкции.</p>
+      </div>
+    </Content>
+
+    <Content imgSrc="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1727817689/mobil_bs9gva.png">
+      <div>
+        <h3 class="text-6xl mb-20 font-bold">Мобилна протетика</h3>
+        <p class="text-2xl">Опфака протетски изработки кои пациентот во секое време може да ги вади од уста.
+ Протезите може да бидат тотални ( се изработуваат доколку се извадени сите заби) или парцијални (се изработуваат доколку се извадени неколку заби, а нема услови за изработка на мост)</p>
+      </div>
+    </Content>
+
+  </div>
+</Layout>

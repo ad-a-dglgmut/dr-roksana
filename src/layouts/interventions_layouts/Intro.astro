@@ -1,0 +1,30 @@
+---
+
+interface Props {
+	imgSrc: string;
+  id: string;
+}
+
+ const { id } = Astro.props
+ const { imgSrc } = Astro.props;
+---
+<div id={id} class="w-full pt-[96px] lg:flex hidden min-h-screen ">
+  <div class="w-full ">
+    <slot/>
+  </div>
+
+  <div class="w-full flex  items-center justify-end">
+    <img class="h-[75vh] mr-10 rounded-xl" src={imgSrc}/>
+  </div> 
+</div>
+
+<div class="lg:hidden w-full h-screen pt-[96px]">
+    <div class="h-[calc(100vh_-_96px)] relative ">
+    <img class="object-cover  w-full h-full" src={imgSrc}></img>
+    <div class="absolute top-0 bg-white bg-opacity-50 text-center flex w-full justify-center items-center h-full">
+        <slot/>
+      </div>
+      
+    </div>
+</div>
+

@@ -1,0 +1,148 @@
+---
+import Layout from "../../layouts/home/Layout.astro"
+import Contact from "../../layouts/home/Contact.astro"
+import Home from "../../layouts/home/Home.astro"
+import AboutUs from "../../layouts/home/AboutUs.astro"
+import Philosophy from "../../layouts/home/Philosophy.astro"
+import Reviews from "../../layouts/home/Reviews.astro"
+
+const reviews: {
+  name:string,
+  content:string
+}[] = [
+    {
+    name: "Μίλκα Παντσούροβα-Γκαντσέβα",
+    content: "Οι καλύτεροι σε αυτό το επαγγελμα που κάνουν. Επαγγελματίες και υπεύθυνοι προσ στους ασθενείς τους. Τους συνιστώ με όλη μου την καρδιά."
+  },
+    {
+    name: "Νάντα Μπαμπούλοβα",
+    content: "Κι εγώ έγινα μέρος της υπέροχης ατμόσφαιρας που υπάρχει στην κλινική σας. Ένα μεγάλο χειροκρότημα για την εξειδίκευση και τον επαγγελματισμό σας."
+  },
+    {
+    name: "Άνιτσα Ντόντσεβα",
+content: "Μεγάλη ευχαριστία για τον επαγγελματισμό σας. Ως ασθενής, είμαι εξαιρετικά ικανοποιημένος/η. Τους συνιστώ με όλη μου την καρδιά."
+  },
+    {
+    name: "Σάσσα Κόστοβ",
+    content: "Οι καλύτεροι στη δουλειά τους, μοναδικοί στη Στρουμίτσα. Δρ. Ροξάνα Πετκόφσκα-Μποζινόβα και το προσωπικό παρέχουν υπηρεσίες και ποιότητα κορυφαίας κατηγορίας..."
+  },
+  ]
+
+---
+<Layout title="Δρ. Ροξάνα Πετκόβσκα-Μποζζίνοβα">
+  <Home>
+        <h1 class=" text-red-500 font-bold 2xl:text-8xl text-7xl">Τώρα το χαμόγελό σας μπορεί να είναι όμορφο όπως αυτό.</h1>  
+        <p class="text-2xl hidden lg:block mt-5">Ζήστε την νέα τάση στην οδοντιατρική... απόλαυση αντί για φόβο κατά την οδοντιατρική παρέμβαση.</p>
+  </Home>
+  <Philosophy>
+Μπαίνετε ενθουσιασμένοι και συγχυμένοι σε έναν άγνωστο χώρο... Μια ευχάριστη φωνή και χαλαρωτική μουσική σας υποδέχονται αμέσως από την πόρτα. Σας καθοδηγούν σε μια άνετη καρέκλα όπου κάθεστε... Φωτισμός με επίκεντρο σας φωτίζει... και έχετε την ελαφριά αίσθηση ότι σας υποβάλλει σε ύπνωση. Οι ήχοι στο παρασκήνιο... ήσιχα... χάνονται, και έτσι σιγά-σιγά ξεχνάτε ποιοι είστε, πού είστε και γιατί είστε εδώ. Σκέφτεστε μόνο πόσο άνετα νιώθετε, και ότι θέλετε να νιώθετε άνετα... και... και... διαπιστώνετε ότι η παρέμβαση έχει ήδη τελειώσει...
+  </Philosophy>
+  <AboutUs id="aboutUs" >
+    <div id="aboutUs" class="w-full flex ">
+      <div class="ml-10 mt-10">
+        <h2  class="lg:text-9xl text-7xl sm:text-8xl mb-10 lg:mb-0 text-red-500 font-bold">Σχετικά με εμάς</h2>
+        <p class="text-2xl mt-5"> Η PZU "ΟΟΣ Δρ. Ροξάνα Πέτκοβσκα-Μποζζίνουα" ιδρύθηκε το 2005 από τη Δρ. Ροξάνα Πέτκοβσκα-Μποζίνοβα. Την ίδια χρονιά, υπεγράφει κει επίσης κανει συμβόλαιο με το ταμείο υγειονομικής ασφάλισης.
+        </p>
+
+        <p class="text-2xl mt-10"> Ως Γενική Οδοντιατρική Κλινική σας, είμαστε αποφασισμένοι να χρησιμοποιούμε τουσ πιο σύγχρονες μεθόδους και υλικά που βασίζονται στη σύγχρονη οδοντιατρική, με στόχο την επίτευξη ορατών αποτελεσμάτων. Όταν σας προσφέρουμε μια θεραπεία, λαμβάνουμε υπόψη τις επιθυμίες σας, σας εξηγούμε ποιες επιλογές έχετε στη διάθεσή σας και το κόστος τους, ώστε να μπορείτε να κάνετε μια ενημερωμένη επιλογή.
+        </p>
+      </div>
+    </div>
+  </AboutUs>
+  <div class="w-full lg:py-[96px] py-20 flex justify-center bg-red-500">
+     <h2 class="lg:text-9xl text-7xl sm:text-8xl ml-5 lg:ml-0 text-white font-bold">Η ομάδα μας</h2>
+  </div>
+<div class="w-full px-10 lg:py-[96px] py-20 min-h-screen bg-red-500 text-white">
+    
+    <div class="pb-[96px]  lg:flex w-full">
+
+      <div class="w-full mr-10 flex ">
+        <img class="lg:h-[calc(100vh_-_96px)] mb-5 lg:mb-0 object-cover rounded-xl" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1722891351/280033374_3277192565841886_769857625062446696_n_tmygya.jpg"/>
+      </div> 
+
+      <div class="w-full ">
+        <div class="text-white h-full flex items-center lg:mr-10 xl:mr-10 text-2xl">
+          <div>
+            <h3 class="text-6xl font-bold">Δρ. Ροξάνα Πετκόβσκα-Μποζζινόβα</h3>
+              <p class=" mt-10">Η Δρ. Ροξάνα Πέτκοβσκα-Μποζζίνοβα αποφοίτησε από τη Σχολή Οδοντιατρικής του Πανεπιστημίου "Άγιος Κυρίλλος και Μεθόδιος" στα Σκόπια το έτουσ 2001 και από τότε εργάζεται ενεργά σε πολλές αναγνωρίσιμες οδοντιατρικές κλινικές στη Στρώμνιτσα. Το 2005 ίδρυσε την δική της οδοντιατρική κλινική, PZU "OOS Δρ. Ροξάνα Πέτκοβσκα-Μποζζίνοβα." <br> Καθ' όλη τη διάρκεια της 24χρονης επαγγελματικής της εμπειρίας, η Δρ. Ροξάνα έχει συμμετάσχει σε πολλές εγχώριες και διεθνείς εκπαιδεύσεις στην αισθητική και συντηρητική οδοντιατρική, παρακολουθώντας τις τελευταίες τάσεις της σύγχρονης οδοντιατρικής πρακτικής. Με προσεκτική και υπομονετική προσέγγιση προς τους ασθενείς της, προσφέρει ασφάλεια και εφαρμόζει επεμβάσεις στους τομείς της συντηρητικής οδοντιατρικής, οδοντιατρικής προσθετικής, ενδοδοντίας, παιδικής και προληπτικής οδοντιατρικής.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pb-[96px] lg:flex w-full">
+
+      <div class="w-full lg:hidden justify-end flex ">
+        <img class="lg:h-[calc(100vh_-_96px)] mb-5 lg:mb-0 object-cover rounded-xl" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1722891351/280033374_3277192565841886_769857625062446696_n_tmygya.jpg"/>
+      </div> 
+      <div class="w-full ">
+        <div class="text-white lg:text-right h-full flex items-center lg:mr-10 text-2xl">
+         <div>
+            <h3 class="text-6xl font-bold">Δρ. Άνα Πετρόβσκα</h3>
+              <p class=" mt-10">Η Δρ. Άνα Πετρόβσκα αποφοίτησε από τη Σχολή Οδοντιατρικής του Πανεπιστημίου "Γκότσε Ντέλτσεβ" στη Στρώμνιτσα το έτουσ 2018 και ανακηρύχθηκε η καλύτερη φοιτήτρια της ακαδημαϊκής χρονιάς 2012/2013. Κατά τη διάρκεια των σπουδών της, στάλθηκε για εκπαίδευση στη Σαμάρα State Medical University στη Ρωσία. <br> Εργάζεται στη PZU "OOS Δρ. Ροξάνα Πέτκοβσκα-Μποζζίνουα" από το έτουσ 2022, όπου δραστηριοποιείται σε όλους τους τομείς της γενικής οδοντιατρικής. Η Δρ. Άνα Πετρόβσκα συμμετέχει τακτικά σε συνεχιζόμενη επαγγελματική εκπαίδευση, με ιδιαίτερο ενδιαφέρον στην Ενδοδοντία, χρησιμοποιώντας τις πιο σύγχρονες τεχνικές μηχανοποιημένης Ενδοδοντίας, τις οποίες εφαρμόζει στην καθημερινή της πρακτική.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full hidden justify-end lg:flex ">
+        <img class="h-[calc(100vh_-_96px)]  rounded-xl" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1722891351/280033374_3277192565841886_769857625062446696_n_tmygya.jpg"/>
+      </div> 
+
+    </div>
+    <div class=" lg:flex w-full">
+
+      <div class="w-full lg:mr-10 xl:mr-10 flex lg:ml-10">
+        <img class="lg:h-[calc(100vh_-_96px)]  mb-5 lg:mb-0 rounded-xl" src="https://res.cloudinary.com/dxvfgwkpx/image/upload/v1722891351/280033374_3277192565841886_769857625062446696_n_tmygya.jpg"/>
+      </div> 
+
+      <div class="w-full ">
+        <div class="text-white h-full flex items-center mr-10 text-2xl">
+          <div>
+            <h3 class="text-6xl font-bold">Σαβέτκα Τάνεβα</h3>
+              <p class=" mt-10">Η Σαβέτκα Τάνεβα είναι οδοντιατρική νοσοκόμα που εργάζεται στη PZU "OOS Δρ. Ροξάνα Πέτκοβσκα-Μποζζίνουα" από το έτουσ 2012 και είναι υπεύθυνη για την ολόκληρη οργάνωση της εργασίας εκεί. Είναι το πρώτο σημείο επαφής για τους ασθενείς στην κλινική, και με την προσοχή και την ευγενική της προσέγγιση, βοηθά στη μείωση του φόβου τους από την αρχή. Είναι πάντα επίμονη και αφοσιωμένη στην εμπλοκή της σε κάθε τομέα της κλινικής.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+<Reviews reviews={reviews} id="reviews">
+      <h2 class="lg:text-9xl mt-10 lg:ml-10 ml-5 text-7xl sm:text-8xl text-red-500 font-bold mb-10">Κριτικές</h2>
+  </Reviews>
+  <Contact id="contact">
+      <h2 class="lg:text-9xl mt-10 ml-0 lg:ml-10 text-7xl sm:text-8xl text-red-500 font-bold mb-10">Επικοινωνία</h2>
+
+    <div class="ml-10 ">
+      <div class="text-2xl flex lg:mb-5 mb-10 items-center">
+<svg class="w-10 h-10 mr-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"/>
+</svg>
+Οδός «Μάρσαλ Τίτο» 113, Στρούμιτσα</div>
+      <div class="text-2xl flex items-center lg:mb-5 mb-10">
+<svg class="w-10 h-10 mr-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
+</svg>
+        <div class="lg:flex"><a class="lg:mr-2 lg:mb-0" href="tel:+38970331923"> +38970 310 923</a> <p>/ 034 346 665</p>  </div></div>
+      <div class="text-2xl flex items-center mb-10">
+<svg class="w-10 h-10 mr-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
+        </svg>
+        <a href="mailto:roksanapb@yahoo.com">roksanapb@yahoo.com</a></div>
+    <div class="flex">
+      <a href="https://www.facebook.com/drroksana?locale=mk_MK"> 
+<svg class="w-16 h-16 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
+</svg>
+</a>
+      <a href="https://www.instagram.com/pzudr_roksana/" class="ml-5"> 
+<svg class="w-16 h-16 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+</svg>
+</a>
+    </div>
+    </div>
+  </Contact>
+</Layout>
+
+
+
+
