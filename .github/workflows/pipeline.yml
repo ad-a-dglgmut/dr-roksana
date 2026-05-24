@@ -1,27 +1,23 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the main branch
   push:
-    branches: [ "main" ] # Change to "master" if your default branch uses it
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [ "main" ]
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
+# 🔹 GLOBAL ENVIRONMENT VARIABLES DEFINED HERE
 env:
   ASTRO_TELEMETRY_DISABLED: true
+  PUBLIC_URLBASE: https://drroksanapb.com/  # 👈 Added your custom public URL variable
 
 jobs:
   build:
@@ -33,9 +29,6 @@ jobs:
 
       - name: Install, cache, and build Site
         uses: withastro/action@v3
-        # If your Astro site isn't at the root of the repo, uncomment the line below:
-        # with:
-        #   path: . 
 
   deploy:
     name: Deploy to GitHub Pages
